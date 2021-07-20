@@ -10,10 +10,7 @@
     "entity": "user",
     "service": "users",
     "secret": "fIo6vLy0Tmeq2exwDCYHB7HHxAA=",
-    "authStrategies": [
-      "jwt",
-      "local"
-    ],
+    "authStrategies": ["jwt", "local"],
     "jwtOptions": {
       "header": {
         "typ": "access"
@@ -21,7 +18,7 @@
       "audience": "https://onbai.app",
       "issuer": "onbai",
       "algorithm": "HS256",
-      "expiresIn": "1d"
+      "expiresIn": "1y"
     },
     "local": {
       "usernameField": "email",
@@ -32,11 +29,7 @@
       "google": {
         "key": "<google oauth key>",
         "secret": "<google oauth secret>",
-        "scope": [
-          "email",
-          "profile",
-          "openid"
-        ]
+        "scope": ["email", "profile", "openid"]
       },
       "facebook": {
         "key": "<facebook oauth key>",
