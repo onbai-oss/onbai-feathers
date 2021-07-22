@@ -1,5 +1,5 @@
 {
-  "name": "onbai-feathersjs",
+  "name": "onbai-feathers-js",
   "description": "",
   "version": "0.0.0",
   "homepage": "",
@@ -24,12 +24,11 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "test": "npm run lint && npm run compile && npm run jest",
-    "lint": "eslint src/. test/. --config .eslintrc.json --ext .ts --fix",
-    "dev": "ts-node-dev --inspect --no-notify src/",
-    "start": "npm run compile && node lib/",
-    "jest": "jest  --forceExit",
-    "compile": "shx rm -rf lib/ && tsc"
+    "test": "npm run lint && npm run jest",
+    "lint": "eslint src/. test/. --config .eslintrc.json --fix",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "jest": "jest  --forceExit"
   },
   "standard": {
     "env": [
@@ -37,7 +36,6 @@
     ],
     "ignore": []
   },
-  "types": "lib/",
   "dependencies": {
     "@feathersjs/authentication": "^4.5.11",
     "@feathersjs/authentication-local": "^4.5.11",
@@ -50,32 +48,14 @@
     "@feathersjs/transport-commons": "^4.5.11",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
-    "feathers-hooks-common": "^5.0.6",
-    "feathers-mongoose": "^8.3.3",
-    "feathers-swagger": "^1.2.1",
+    "feathers-mongodb": "^6.3.0",
     "helmet": "^4.6.0",
-    "mongodb-core": "^3.2.7",
-    "mongoose": "^5.12.14",
-    "nanoid": "^3.1.23",
+    "mongodb": "^3.6.1",
     "serve-favicon": "^2.5.0",
-    "swr": "^0.5.6",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@types/compression": "^1.7.0",
-    "@types/cors": "^2.8.10",
-    "@types/jest": "^26.0.23",
-    "@types/jsonwebtoken": "^8.5.1",
-    "@types/serve-favicon": "^2.5.2",
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
-    "axios": "^0.21.1",
-    "eslint": "^7.29.0",
-    "jest": "^27.0.5",
-    "shx": "^0.3.3",
-    "ts-jest": "^27.0.1",
-    "ts-node-dev": "^1.1.6",
-    "typescript": "^4.3.2"
+    "nodemon": "^2.0.12"
   },
   "prettier": {
     "printWidth": 80,

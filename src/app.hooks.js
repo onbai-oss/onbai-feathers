@@ -1,11 +1,8 @@
-import * as authentication from '@feathersjs/authentication'
-// Don't remove this comment. It's needed to format import lines nicely.
+// Application hooks that run for every service
 
-const { authenticate } = authentication.hooks
-
-export default {
+module.exports = {
   before: {
-    all: [authenticate('jwt')],
+    all: [],
     find: [],
     get: [],
     create: [],

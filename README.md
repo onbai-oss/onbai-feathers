@@ -1,4 +1,4 @@
-# onbai-feathersjs
+# onbai-feathers-js
 
 > 
 
@@ -14,7 +14,7 @@ Getting up and running is as easy as 1, 2, 3.
 2. Install your dependencies
 
     ```
-    cd path/to/onbai-feathersjs
+    cd path/to/onbai-feathers-js
     npm install
     ```
 

@@ -1,4 +1,4 @@
-import app from '../../src/app';
+const app = require('../../src/app');
 
 describe('\'users\' service', () => {
   it('registered the service', () => {

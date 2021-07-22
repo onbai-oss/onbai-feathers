@@ -1,4 +1,4 @@
-import app from '../src/app';
+const app = require('../src/app');
 
 describe('authentication', () => {
   it('registered the authentication service', () => {
@@ -23,7 +23,7 @@ describe('authentication', () => {
       const { user, accessToken } = await app.service('authentication').create({
         strategy: 'local',
         ...userInfo
-      }, {});
+      });
       
       expect(accessToken).toBeTruthy();
       expect(user).toBeTruthy();
