@@ -5,6 +5,8 @@ const hooks = require('./question.hooks')
 module.exports = function (app) {
   const options = {
     paginate: app.get('paginate'),
+    id: 'id',
+    disableObjectify: true,
   }
 
   // Initialize our service with any options it requires
