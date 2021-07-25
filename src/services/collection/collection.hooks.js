@@ -1,13 +1,13 @@
 const { authenticate } = require('@feathersjs/authentication').hooks
-const { setUserId, limitToUser, setUserEmail } = require('../../hooks')
+const { setUserId, limitToUser } = require('../../hooks')
 const { protect } = require('@feathersjs/authentication-local').hooks
 module.exports = {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [authenticate('jwt'), setUserId, setUserEmail],
-    update: [authenticate('jwt'), limitToUser, setUserEmail],
+    create: [authenticate('jwt'), setUserId],
+    update: [authenticate('jwt'), limitToUser],
     patch: [authenticate('jwt'), limitToUser],
     remove: [authenticate('jwt'), limitToUser],
   },
