@@ -1,9 +1,16 @@
 const { authenticate } = require('@feathersjs/authentication').hooks
 const { setUserId, limitToUser } = require('../../hooks')
 const { protect } = require('@feathersjs/authentication-local').hooks
+const search = require('feathers-mongodb-fuzzy-search')
+
 module.exports = {
   before: {
-    all: [],
+    all: [
+      search(),
+      search({
+        fields: ['title'],
+      }),
+    ],
     find: [],
     get: [],
     create: [authenticate('jwt'), setUserId],

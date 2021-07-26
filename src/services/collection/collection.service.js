@@ -7,6 +7,7 @@ module.exports = function (app) {
     paginate: app.get('paginate'),
     id: 'id',
     disableObjectify: true,
+    whitelist: ['$regex', '$search'],
   }
 
   // Initialize our service with any options it requires

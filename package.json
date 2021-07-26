@@ -51,6 +51,7 @@
     "cors": "^2.8.5",
     "feathers-authentication-hooks": "^1.0.2",
     "feathers-mongodb": "^6.3.0",
+    "feathers-mongodb-fuzzy-search": "^2.0.1",
     "helmet": "^4.6.0",
     "mongodb": "^3.6.1",
     "serve-favicon": "^2.5.0",
