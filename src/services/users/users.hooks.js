@@ -3,6 +3,7 @@ const { setField } = require('feathers-authentication-hooks')
 
 const { hashPassword, protect } =
   require('@feathersjs/authentication-local').hooks
+const search = require('feathers-mongodb-fuzzy-search')
 
 module.exports = {
   before: {
