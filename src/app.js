@@ -4,6 +4,7 @@ const compress = require('compression')
 const helmet = require('helmet')
 const cors = require('cors')
 const logger = require('./logger')
+const dotenv = require('dotenv')
 
 const feathers = require('@feathersjs/feathers')
 const configuration = require('@feathersjs/configuration')
@@ -18,6 +19,8 @@ const channels = require('./channels')
 const authentication = require('./authentication')
 
 const mongodb = require('./mongodb')
+
+dotenv.config()
 
 const app = express(feathers())
 
@@ -56,5 +59,7 @@ app.use(express.notFound())
 app.use(express.errorHandler({ logger }))
 
 app.hooks(appHooks)
+
+console.info(app.get('grant'))
 
 module.exports = app

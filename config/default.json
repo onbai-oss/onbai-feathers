@@ -9,7 +9,7 @@
   "authentication": {
     "entity": "user",
     "service": "users",
-    "secret": "wbQQ5kH3ykYNG/oFiY/rb1Qn+wg=",
+    "secret": "USER_SECRET",
     "authStrategies": ["jwt", "local"],
     "jwtOptions": {
       "header": {
@@ -25,17 +25,19 @@
       "passwordField": "password"
     },
     "oauth": {
-      "redirect": "/",
+      "redirect": "REDIRECT_OAUTH",
       "google": {
-        "key": "<google oauth key>",
-        "secret": "<google oauth secret>",
-        "scope": ["email", "profile", "openid"]
+        "key": "GOOGLE_ID",
+        "secret": "GOOGLE_KEY",
+        "scope": ["openid", "email", "profile"],
+        "nonce": true
       },
       "facebook": {
-        "key": "<facebook oauth key>",
-        "secret": "<facebook oauth secret>"
+        "key": "FB_ID",
+        "secret": "FB_KEY",
+        "scope": ["email, public_profile"]
       }
     }
   },
-  "mongodb": "mongodb://localhost:27017/onbai_feathers"
+  "mongodb": "MONGO_URL"
 }

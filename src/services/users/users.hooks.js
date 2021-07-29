@@ -5,6 +5,17 @@ const { hashPassword, protect } =
   require('@feathersjs/authentication-local').hooks
 const search = require('feathers-mongodb-fuzzy-search')
 
+const { customAlphabet } = require('nanoid')
+
+const addBasicInfo = async (context) => {
+  if (context.data.strategy === 'local') {
+    const id = customAlphabet('1234567890', 9)()
+    context.data.image = `https://robohash.org/${id}.png?set=set4`
+    context.data.name = `Onbai-${id}`
+  }
+  return context
+}
+
 module.exports = {
   before: {
     all: [],
@@ -22,7 +33,7 @@ module.exports = {
         as: 'params.query.id',
       }),
     ],
-    create: [hashPassword('password')],
+    create: [hashPassword('password'), addBasicInfo],
     update: [hashPassword('password'), authenticate('jwt')],
     patch: [hashPassword('password'), authenticate('jwt')],
     remove: [authenticate('jwt')],

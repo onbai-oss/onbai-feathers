@@ -1,4 +1,4 @@
 {
-  "host": "onbai-feathers-js-app.feathersjs.com",
+  "host": "PROD_HOST",
   "port": "PORT"
 }
