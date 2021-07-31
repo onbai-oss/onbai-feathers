@@ -1,11 +1,10 @@
 const { authenticate } = require('@feathersjs/authentication').hooks
 const { setField } = require('feathers-authentication-hooks')
-
 const { hashPassword, protect } =
   require('@feathersjs/authentication-local').hooks
 const search = require('feathers-mongodb-fuzzy-search')
-
 const { customAlphabet } = require('nanoid')
+const { updatedAt, createdAt } = require('../../hooks')
 
 const addBasicInfo = async (context) => {
   if (context.data.strategy === 'local') {
@@ -33,9 +32,9 @@ module.exports = {
         as: 'params.query.id',
       }),
     ],
-    create: [hashPassword('password'), addBasicInfo],
-    update: [hashPassword('password'), authenticate('jwt')],
-    patch: [hashPassword('password'), authenticate('jwt')],
+    create: [hashPassword('password'), addBasicInfo, createdAt],
+    update: [hashPassword('password'), authenticate('jwt'), updatedAt],
+    patch: [hashPassword('password'), authenticate('jwt'), updatedAt],
     remove: [authenticate('jwt')],
   },
 

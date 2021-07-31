@@ -13,3 +13,13 @@ module.exports.setUserEmail = setField({
   from: 'params.user.email',
   as: 'data.userEmail',
 })
+
+module.exports.createdAt = async (context) => {
+  context.data.createdAt = new Date()
+  return context
+}
+
+module.exports.updatedAt = async (context) => {
+  context.data.updatedAt = new Date()
+  return context
+}
