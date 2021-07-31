@@ -60,6 +60,4 @@ app.use(express.errorHandler({ logger }))
 
 app.hooks(appHooks)
 
-console.info(app.get('grant'))
-
 module.exports = app

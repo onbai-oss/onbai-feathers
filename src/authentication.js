@@ -11,7 +11,6 @@ const { default: axios } = require('axios')
 
 class GoogleStrategy extends OAuthStrategy {
   async getEntityData(profile) {
-    console.log(profile)
     // this will set 'googleId'
     const baseData = await super.getEntityData(profile)
 
@@ -31,8 +30,6 @@ class FacebookStrategy extends OAuthStrategy {
     // This is the OAuth access token that can be used
     // for Facebook API requests as the Bearer token
     const accessToken = authResult.access_token
-    console.log(accessToken)
-
     const { data } = await axios.get('https://graph.facebook.com/me', {
       headers: {
         authorization: `Bearer ${accessToken}`,
