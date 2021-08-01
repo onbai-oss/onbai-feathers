@@ -15,11 +15,11 @@ module.exports.setUserEmail = setField({
 })
 
 module.exports.createdAt = async (context) => {
-  context.data.createdAt = new Date()
+  context.data.createdAt = new Date().getTime()
   return context
 }
 
 module.exports.updatedAt = async (context) => {
-  context.data.updatedAt = new Date()
+  context.data.updatedAt = new Date().getTime()
   return context
 }

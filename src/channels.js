@@ -30,7 +30,6 @@ module.exports = function (app) {
   })
 
   app.publish((data, hook) => {
-    console.log(data, hook)
     // e.g. to publish all service events to all authenticated users use
     return app.channel('authenticated')
   })
