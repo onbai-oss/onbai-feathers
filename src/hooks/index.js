@@ -29,7 +29,7 @@ module.exports.addTimer = async (ctx) => {
   console.log(ctx.data)
   if (
     [1, 2].includes(ctx.data?.game?.rule?.mode) &&
-    ctx.data?.status === 1 &&
+    ctx.data?.status == 'playing' &&
     !ctx.data?.game?.startTime
   ) {
     console.log('Set timer')
