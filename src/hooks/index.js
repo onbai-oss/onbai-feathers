@@ -28,7 +28,7 @@ module.exports.updatedAt = async (context) => {
 module.exports.addTimer = async (ctx) => {
   console.log(ctx.data)
   if (
-    [1, 2].includes(ctx.data?.game?.rule?.mode) &&
+    ['time', 'all'].includes(ctx.data?.game?.rule?.mode) &&
     ctx.data?.status == 'playing' &&
     !ctx.data?.game?.startTime
   ) {
