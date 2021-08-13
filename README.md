@@ -1,6 +1,6 @@
 # onbai-feathers-js
 
-> 
+>
 
 ## About
 
@@ -13,16 +13,16 @@ Getting up and running is as easy as 1, 2, 3.
 1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
 2. Install your dependencies
 
-    ```
-    cd path/to/onbai-feathers-js
-    npm install
-    ```
+   ```
+   cd path/to/onbai-feathers-js
+   npm install
+   ```
 
 3. Start your app
 
-    ```
-    npm start
-    ```
+   ```
+   npm start
+   ```
 
 ## Testing
 
@@ -43,3 +43,18 @@ $ feathers help                           # Show all commands
 ## Help
 
 For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
+
+## Env example
+
+```bash
+GOOGLE_ID = "xxx"
+GOOGLE_KEY = "xxx"
+FB_ID = "xxx"
+FB_KEY = "xxx"
+
+USER_SECRET="xxx"
+REDIRECT_OAUTH="http://localhost:3000/login/oauth/"
+MONGO_URL="mongodb://localhost:27017/onbai_feathers"
+# PROD
+PROD_HOST="onbai.app"
+```
