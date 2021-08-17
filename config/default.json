@@ -25,7 +25,7 @@
       "passwordField": "password"
     },
     "oauth": {
-      "redirect": "OAUTH_CALLBACK",
+      "redirect": "https://onbai.online/login/oauth/",
       "google": {
         "key": "GOOGLE_ID",
         "secret": "GOOGLE_KEY",
