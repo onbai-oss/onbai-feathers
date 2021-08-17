@@ -18,6 +18,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cp feathers/.env ~/actions-runner/_work/onbai-feathers/onbai-feathers
       - run: npm install
+      - run: cp ~/feathers/.env ~/actions-runner/_work/onbai-feathers/onbai-feathers
       - run: pm2 restart be --update-env
