@@ -53,7 +53,7 @@ FB_ID = "xxx"
 FB_KEY = "xxx"
 
 USER_SECRET="xxx"
-REDIRECT_OAUTH="http://localhost:3000/login/oauth/"
+OAUTH_CALLBACK="http://localhost:3000/login/oauth/"
 MONGO_URL="mongodb://localhost:27017/onbai_feathers"
 # PROD
 PROD_HOST="onbai.app"
