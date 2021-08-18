@@ -10,7 +10,7 @@
     "entity": "user",
     "service": "users",
     "secret": "USER_SECRET",
-    "authStrategies": ["jwt", "local"],
+    "authStrategies": ["jwt", "local", "firebase"],
     "jwtOptions": {
       "header": {
         "typ": "access"
@@ -24,20 +24,7 @@
       "usernameField": "email",
       "passwordField": "password"
     },
-    "oauth": {
-      "redirect": "OAUTH_CALLBACK",
-      "google": {
-        "key": "GOOGLE_ID",
-        "secret": "GOOGLE_KEY",
-        "scope": ["openid", "email", "profile"],
-        "nonce": true
-      },
-      "facebook": {
-        "key": "FB_ID",
-        "secret": "FB_KEY",
-        "scope": ["email, public_profile"]
-      }
-    }
+    "oauth": {}
   },
   "mongodb": "MONGO_URL"
 }

@@ -1,6 +1,8 @@
-# onbai-feathers-js
+# Onbai-feathers-js
 
->
+![GitHub](https://img.shields.io/github/license/onbai-oss/onbai-nextjs?style=for-the-badge) ![David](https://img.shields.io/david/onbai-oss/onbai-nextjs?style=for-the-badge) ![GitHub package.json version](https://img.shields.io/github/package-json/v/onbai-oss/onbai-nextjs?style=for-the-badge) ![GitHub branch checks state](https://img.shields.io/github/checks-status/onbai-oss/onbai-nextjs/main?style=for-the-badge)
+![Lines of code](https://img.shields.io/tokei/lines/github/onbai-oss/onbai-nextjs?label=CODE%20LINES&style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/onbai-oss/onbai-nextjs?style=for-the-badge) ![Relative date](https://img.shields.io/date/1629018000?label=Created&style=for-the-badge)
 
 ## About
 
@@ -53,7 +55,6 @@ FB_ID = "xxx"
 FB_KEY = "xxx"
 
 USER_SECRET="xxx"
-OAUTH_CALLBACK="http://localhost:3000/login/oauth/"
 MONGO_URL="mongodb://localhost:27017/onbai_feathers"
 # PROD
 PROD_HOST="onbai.app"
