@@ -20,4 +20,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: cp ~/feathers/.env ~/actions-runner/_work/onbai-feathers/onbai-feathers
+      - run: cp ~/feathers/firebase.json ~/actions-runner/_work/onbai-feathers/onbai-feathers
       - run: pm2 restart be --update-env
