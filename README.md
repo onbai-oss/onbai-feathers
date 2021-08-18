@@ -1,6 +1,6 @@
 # Onbai-feathers-js
 
-![GitHub](https://img.shields.io/github/license/onbai-oss/onbai-feathers?style=for-the-badge) ![David](https://img.shields.io/david/onbai-oss/onbai-feathers?style=for-the-badge) ![GitHub package.json version](https://img.shields.io/github/package-json/v/onbai-oss/onbai-feathers?style=for-the-badge) ![GitHub branch checks state](https://img.shields.io/github/checks-status/onbai-oss/onbai-feathers/main?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/onbai-oss/onbai-feathers?style=for-the-badge) ![GitHub package.json version](https://img.shields.io/github/package-json/v/onbai-oss/onbai-feathers?style=for-the-badge) ![GitHub branch checks state](https://img.shields.io/github/checks-status/onbai-oss/onbai-feathers/main?style=for-the-badge)
 ![Lines of code](https://img.shields.io/tokei/lines/github/onbai-oss/onbai-feathers?label=CODE%20LINES&style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/onbai-oss/onbai-feathers?style=for-the-badge) ![Relative date](https://img.shields.io/date/1629018000?label=Created&style=for-the-badge)
 
