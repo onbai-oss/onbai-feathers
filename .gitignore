@@ -111,5 +111,8 @@ lib/
 data/
 
 .env
+.env.local
+.env.production.local
+.env.test.local
 
 firebase.json
