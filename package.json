@@ -53,7 +53,7 @@
     "dayjs": "^1.10.6",
     "dotenv": "^10.0.0",
     "feathers-authentication-hooks": "^1.0.2",
-    "feathers-mongodb": "^6.3.0",
+    "feathers-mongodb": "^6.3.1",
     "feathers-mongodb-fuzzy-search": "^2.0.1",
     "feathers-swagger": "^1.2.1",
     "firebase-admin": "^9.11.1",
