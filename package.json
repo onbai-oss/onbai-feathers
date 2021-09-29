@@ -1,75 +1,75 @@
 {
-  "name": "onbai-feathers-js",
-  "description": "",
-  "version": "0.1.2",
-  "homepage": "",
-  "private": true,
-  "main": "src",
-  "keywords": [
-    "feathers"
-  ],
-  "author": {
-    "name": "001123",
-    "email": "khuongduy1897@gmail.com"
-  },
-  "contributors": [],
-  "bugs": {},
-  "directories": {
-    "lib": "src",
-    "test": "test/",
-    "config": "config/"
-  },
-  "engines": {
-    "node": "^14.0.0",
-    "npm": ">= 3.0.0"
-  },
-  "scripts": {
-    "test": "npm run lint && npm run jest",
-    "lint": "eslint src/. test/. --config .eslintrc.json --fix",
-    "dev": "nodemon src/",
-    "start": "node src/",
-    "jest": "jest  --forceExit"
-  },
-  "standard": {
-    "env": [
-      "jest"
+    "name": "onbai-feathers-js",
+    "description": "",
+    "version": "0.1.2",
+    "homepage": "",
+    "private": true,
+    "main": "src",
+    "keywords": [
+        "feathers"
     ],
-    "ignore": []
-  },
-  "dependencies": {
-    "@feathersjs/authentication": "^4.5.11",
-    "@feathersjs/authentication-local": "^4.5.11",
-    "@feathersjs/authentication-oauth": "^4.5.11",
-    "@feathersjs/configuration": "^4.5.11",
-    "@feathersjs/errors": "^4.5.11",
-    "@feathersjs/express": "^4.5.11",
-    "@feathersjs/feathers": "^4.5.11",
-    "@feathersjs/socketio": "^4.5.11",
-    "@feathersjs/transport-commons": "^4.5.11",
-    "@types/node": "^16.9.6",
-    "axios": "^0.21.4",
-    "compression": "^1.7.4",
-    "cors": "^2.8.5",
-    "dayjs": "^1.10.7",
-    "dotenv": "^10.0.0",
-    "feathers-authentication-hooks": "^1.0.2",
-    "feathers-mongodb": "^6.3.1",
-    "feathers-mongodb-fuzzy-search": "^2.0.1",
-    "feathers-swagger": "^1.2.1",
-    "firebase-admin": "^9.11.1",
-    "helmet": "^4.6.0",
-    "mongodb": "^3.7.1",
-    "nanoid": "^3.1.25",
-    "serve-favicon": "^2.5.0",
-    "winston": "^3.3.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  }
+    "author": {
+        "name": "001123",
+        "email": "khuongduy1897@gmail.com"
+    },
+    "contributors": [],
+    "bugs": {},
+    "directories": {
+        "lib": "src",
+        "test": "test/",
+        "config": "config/"
+    },
+    "engines": {
+        "node": "^14.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "scripts": {
+        "test": "npm run lint && npm run jest",
+        "lint": "eslint src/. test/. --config .eslintrc.json --fix",
+        "dev": "nodemon src/",
+        "start": "node src/",
+        "jest": "jest  --forceExit"
+    },
+    "standard": {
+        "env": [
+            "jest"
+        ],
+        "ignore": []
+    },
+    "dependencies": {
+        "@feathersjs/authentication": "^4.5.11",
+        "@feathersjs/authentication-local": "^4.5.11",
+        "@feathersjs/authentication-oauth": "^4.5.11",
+        "@feathersjs/configuration": "^4.5.11",
+        "@feathersjs/errors": "^4.5.11",
+        "@feathersjs/express": "^4.5.11",
+        "@feathersjs/feathers": "^4.5.11",
+        "@feathersjs/socketio": "^4.5.11",
+        "@feathersjs/transport-commons": "^4.5.11",
+        "@types/node": "^16.10.2",
+        "axios": "^0.21.4",
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "dayjs": "^1.10.7",
+        "dotenv": "^10.0.0",
+        "feathers-authentication-hooks": "^1.0.2",
+        "feathers-mongodb": "^6.3.1",
+        "feathers-mongodb-fuzzy-search": "^2.0.1",
+        "feathers-swagger": "^1.2.1",
+        "firebase-admin": "^9.12.0",
+        "helmet": "^4.6.0",
+        "mongodb": "^3.7.1",
+        "nanoid": "^3.1.28",
+        "serve-favicon": "^2.5.0",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.13"
+    },
+    "prettier": {
+        "printWidth": 80,
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5"
+    }
 }
