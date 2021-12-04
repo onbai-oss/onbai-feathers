@@ -64,7 +64,7 @@
         "winston": "^3.3.3"
     },
     "devDependencies": {
-        "nodemon": "^2.0.13"
+        "nodemon": "2.0.15"
     },
     "prettier": {
         "printWidth": 80,
