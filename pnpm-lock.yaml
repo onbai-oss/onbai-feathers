@@ -21,7 +21,7 @@ specifiers:
   feathers-mongodb-fuzzy-search: 2.0.1
   feathers-swagger: 1.2.2
   firebase-admin: 9.12.0
-  helmet: 5.0.1
+  helmet: 5.1.1
   mongodb: 3.7.2
   nanoid: 3.1.29
   nodemon: 2.0.13
@@ -49,7 +49,7 @@ dependencies:
   feathers-mongodb-fuzzy-search: 2.0.1
   feathers-swagger: 1.2.2
   firebase-admin: 9.12.0
-  helmet: 5.0.1
+  helmet: 5.1.1
   mongodb: 3.7.2
   nanoid: 3.1.29
   serve-favicon: 2.5.0
@@ -1705,8 +1705,8 @@ packages:
     dev: false
     optional: true
 
-  /helmet/5.0.1:
-    resolution: {integrity: sha512-iyYpGYH2nbQVaQtauYDnemWg45S2RyGvJ+iKj+V9jp7Dc1NTtAJHmD+hFOSYS7Xdwe1GeyVEYSydggXLOg6TKQ==}
+  /helmet/5.1.1:
+    resolution: {integrity: sha512-/yX0oVZBggA9cLJh8aw3PPCfedBnbd7J2aowjzsaWwZh7/UFY0nccn/aHAggIgWUFfnykX8GKd3a1pSbrmlcVQ==}
     engines: {node: '>=12.0.0'}
     dev: false
 
