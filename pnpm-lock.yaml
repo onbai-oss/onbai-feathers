@@ -14,7 +14,7 @@ specifiers:
   axios: 0.25.0
   compression: 1.7.4
   cors: 2.8.5
-  dayjs: 1.10.7
+  dayjs: 1.11.10
   dotenv: 10.0.0
   feathers-authentication-hooks: 1.0.2
   feathers-mongodb: 6.4.1
@@ -42,7 +42,7 @@ dependencies:
   axios: 0.25.0
   compression: 1.7.4
   cors: 2.8.5
-  dayjs: 1.10.7
+  dayjs: 1.11.10
   dotenv: 10.0.0
   feathers-authentication-hooks: 1.0.2
   feathers-mongodb: 6.4.1
@@ -1008,8 +1008,8 @@ packages:
     dev: false
     optional: true
 
-  /dayjs/1.10.7:
-    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
+  /dayjs/1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
     dev: false
 
   /debug/2.6.9:
